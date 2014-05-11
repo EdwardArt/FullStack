@@ -1,0 +1,43 @@
+
+<html>
+	<head>
+		<title>Bootstrap Modal Dialog Box</title>
+		<link href="/static/css/bootstrap.css" rel="stylesheet">
+		<script src="/static/js/jquery.js"></script>
+		<script src="/static/js/bootstrap-transition.js"></script>
+		<script src="/static/js/bootstrap-modal.js"></script>
+		<style>
+			.divDemoBody  {
+				width: 60%;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 100px;
+				}
+			</style>
+		<script>
+			function closeDialog () {
+				$('#windowTitleDialog').modal('hide'); 
+				};
+			</script>
+		</head>
+	<body>
+		<div class="divDemoBody">
+			<h1>"Hello World" using a Bootstrap Modal Dialog box<br></br></h1>
+			<div id="windowTitleDialog" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="windowTitleLabel" aria-hidden="true">
+				<div class="modal-header">
+					<a href="#" class="close" data-dismiss="modal">&times;</a>
+					</div>
+				<div class="modal-body">
+					<div class="divDialogElements">
+						<h3>Hello World</h3>
+						</div>
+					</div>
+				<div class="modal-footer">
+					<a href="#" class="btn btn-primary" onclick="closeDialog ();">OK</a>
+					</div>
+				</div>
+			<div class="divButtons">
+				<a data-toggle="modal" href="#windowTitleDialog" class="btn btn-primary btn-large">Press me</a>
+				</div>
+			</div>
+		</body>
